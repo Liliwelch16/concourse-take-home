@@ -1,26 +1,33 @@
 {
-  "name": "react-app",
+  "name": "concourse-rfp-builder",
   "version": "1.0.0",
-  "description": "A basic React webpage",
+  "description": "Next.js RFP Builder Application",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack serve --mode development",
-    "build": "npx webpack --mode production"
+    "dev": "next dev -H localhost -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "axios": "^1.10.0",
-    "openai": "^5.9.0",
+    "next": "^14.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "multer": "^2.0.1",
+    "pdf-parse": "^1.1.1",
+    "openai": "^5.9.0",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.0",
-    "@babel/preset-env": "^7.22.0",
-    "@babel/preset-react": "^7.22.0",
-    "babel-loader": "^9.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^5.1.0",
-    "webpack-dev-server": "^4.15.0"
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "typescript": "^5.0.0"
   }
 }
